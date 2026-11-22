@@ -1,0 +1,43 @@
+services:
+  db:
+    image: mysql:8.0
+    container_name: sc_harness_db
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: root_password
+      MYSQL_DATABASE: wordpress
+      MYSQL_USER: wordpress
+      MYSQL_PASSWORD: wordpress_password
+    volumes:
+      - harness_db_data:/var/lib/mysql
+
+  wordpress:
+    image: wordpress:latest
+    container_name: sc_harness_wordpress
+    restart: always
+    depends_on:
+      - db
+    ports:
+      - "8892:80"
+    environment:
+      WORDPRESS_DB_HOST: db:3306
+      WORDPRESS_DB_USER: wordpress
+      WORDPRESS_DB_PASSWORD: wordpress_password
+      WORDPRESS_DB_NAME: wordpress
+    volumes:
+      - harness_wordpress_data:/var/www/html
+      - ./apache-limits.conf:/etc/apache2/conf-enabled/z-limits.conf:ro
+      - ./wp-uploads:/var/www/html/wp-content/uploads
+      - ./local-plugins/elementor:/var/www/html/wp-content/plugins/elementor
+      - ./local-plugins/pro-elements:/var/www/html/wp-content/plugins/pro-elements
+      - /Volumes/T7/Lyness/SAAS/SuperComponent Studio:/var/www/html/wp-content/plugins/supercomponent-studio
+      - /Volumes/T7/Lyness/SAAS/Supercraft Animation Plugin:/var/www/html/wp-content/plugins/supercraft-animation-plugin
+      - /Volumes/T7/Lyness/SAAS/Supercraft Master Plugin:/var/www/html/wp-content/plugins/supercraft-master-plugin
+      - ./Novamira/novamira:/var/www/html/wp-content/plugins/novamira
+      - ./Novamira/novamira-pro:/var/www/html/wp-content/plugins/novamira-pro
+      - /Volumes/T7/Lyness/SAAS/Supercraft Animation Plugin/local-themes/hello-elementor:/var/www/html/wp-content/themes/hello-elementor
+
+volumes:
+  harness_db_data:
+  harness_wordpress_data:
+

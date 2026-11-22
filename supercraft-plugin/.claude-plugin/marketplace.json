@@ -1,0 +1,14 @@
+{
+  "name": "supercraft",
+  "owner": { "name": "Supercraft Studio" },
+  "metadata": {
+    "description": "Supercraft Studio's local Claude Code plugins."
+  },
+  "plugins": [
+    {
+      "name": "supercraft-harness",
+      "source": "./plugins/supercraft-harness",
+      "description": "Screenshot-to-Elementor build harness: Supercraft design rules, 4-tier build ladder, Novamira Pro workflow, animation/component guides, token polish and independent visual QA."
+    }
+  ]
+}

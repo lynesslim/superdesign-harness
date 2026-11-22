@@ -1,0 +1,8 @@
+{
+  "editorial":   {"label": "Editorial serif + grotesk (institutional, thoughtful)", "display": "Lora", "displayWeights": "400;500", "body": "Manrope", "bodyWeights": "400;500;600;700", "displayTracking": -0.035},
+  "modern-serif":{"label": "High-contrast serif + friendly sans (premium, warm)", "display": "Fraunces", "displayWeights": "400;500", "body": "DM Sans", "bodyWeights": "400;500;600;700", "displayTracking": -0.03},
+  "corporate":   {"label": "Classic serif + clean sans (trust, finance, legal)", "display": "Source Serif 4", "displayWeights": "400;500", "body": "Public Sans", "bodyWeights": "400;500;600;700", "displayTracking": -0.025},
+  "geometric":   {"label": "Geometric display + neutral sans (tech, startup)", "display": "Sora", "displayWeights": "400;500;600", "body": "DM Sans", "bodyWeights": "400;500;600;700", "displayTracking": -0.035},
+  "friendly":    {"label": "Characterful grotesk + rounded sans (community, education)", "display": "Bricolage Grotesque", "displayWeights": "400;500;600", "body": "Figtree", "bodyWeights": "400;500;600;700", "displayTracking": -0.03},
+  "technical":   {"label": "Space grotesk + plex (engineering, data)", "display": "Space Grotesk", "displayWeights": "400;500;600", "body": "IBM Plex Sans", "bodyWeights": "400;500;600;700", "displayTracking": -0.03}
+}

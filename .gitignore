@@ -1,0 +1,14 @@
+# Local WordPress test artifacts & plugin archives
+wp-uploads/
+Novamira/novamira/
+Novamira/novamira-pro/
+build-plan.json
+.DS_Store
+node_modules/
+
+local-plugins/
+.wp-local-credentials
+.mcp.json
+.playwright-mcp/
+*.png
+onecredit-*.html
