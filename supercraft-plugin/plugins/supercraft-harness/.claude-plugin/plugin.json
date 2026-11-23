@@ -1,6 +1,6 @@
 {
   "name": "supercraft-harness",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Supercraft Autonomous Web Design & Build Harness: convert briefs and reference screenshots into production-grade WordPress + Elementor pages via Novamira Pro, with Supercraft design taste, layout-first engineering and independent visual QA.",
   "author": { "name": "Supercraft Studio" },
   "keywords": ["wordpress", "elementor", "novamira", "design", "visual-qa"]
